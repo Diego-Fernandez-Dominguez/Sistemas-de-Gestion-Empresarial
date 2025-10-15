@@ -23,6 +23,16 @@ namespace _01_HelloWorld.Controllers
             return View();
         }
 
+        public string Devuelvo()
+        {
+            return "Vaya guapo esto de devolver un string";
+        }
+
+        public IActionResult Canguro()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
