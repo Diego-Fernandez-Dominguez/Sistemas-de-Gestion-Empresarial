@@ -19,6 +19,12 @@ namespace _01_ViewBag.Controllers
             var hora = DateTime.Now.Hour;
             string saludo;
 
+            //Creacion de persona
+            clsPersona oPersona = new clsPersona();
+            oPersona.id = 1;
+            oPersona.nombre = "Diego Fernandez Dominguez";
+
+
             if (hora < 12)
             {
                 saludo = "Buenos dias";
@@ -35,11 +41,6 @@ namespace _01_ViewBag.Controllers
             ViewData["Saludo"] = saludo;
 
             ViewBag.Hora = DateTime.Now;
-
-            clsPersona oPersona = new clsPersona();
-
-            oPersona.id = 1;
-            oPersona.nombre = "Diego Fernandez Dominguez";
 
             return View(oPersona);
         }
