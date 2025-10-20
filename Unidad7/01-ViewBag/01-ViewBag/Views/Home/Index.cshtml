@@ -1,0 +1,11 @@
+﻿@using _01_ViewBag.Models.Entities
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Holis</h1>
+    <p>@ViewData["Saludo"]</p>
+    <p>@ViewBag.Hora</p>
+    <p>Nombre: @Model.nombre</p>
+</div>

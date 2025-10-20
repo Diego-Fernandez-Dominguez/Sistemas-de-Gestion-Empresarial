@@ -28,7 +28,7 @@ namespace _01_HelloWorld.Controllers
             return "Vaya guapo esto de devolver un string";
         }
 
-        public IActionResult Canguro()
+        public IActionResult Empanado()
         {
             return View();
         }

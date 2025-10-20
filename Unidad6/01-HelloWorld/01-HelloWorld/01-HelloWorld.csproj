@@ -7,4 +7,11 @@
     <RootNamespace>_01_HelloWorld</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Filete\**" />
+    <Content Remove="Views\Filete\**" />
+    <EmbeddedResource Remove="Views\Filete\**" />
+    <None Remove="Views\Filete\**" />
+  </ItemGroup>
+
 </Project>
