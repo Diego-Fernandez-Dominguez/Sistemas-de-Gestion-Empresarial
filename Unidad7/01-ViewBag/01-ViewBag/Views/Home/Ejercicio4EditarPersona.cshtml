@@ -10,17 +10,17 @@
 
     <div>
         <label>Id:</label>
-        @Html.TextBoxFor(model => model.id, new { @class = "form-control", @readonly = "readonly" })
+        @Html.TextBoxFor(model => model.id, new { @readonly = "readonly" })
     </div>
 
     <div>
         <label>Nombre:</label>
-        @Html.TextBoxFor(model => model.nombre, new { @class = "form-control" })
+        @Html.TextBoxFor(model => model.nombre)
     </div>
 
     <div>
         <label>Apellidos:</label>
-        @Html.TextBoxFor(model => model.apellido, new { @class = "form-control" })
+        @Html.TextBoxFor(model => model.apellido)
     </div>
 
     <div>
