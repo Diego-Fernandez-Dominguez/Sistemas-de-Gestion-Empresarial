@@ -5,6 +5,7 @@
         #region Atributos privados
         private int _id;
         private string _nombre;
+        private string _apellido;
 
         #endregion
         #region Getters y setters
@@ -19,6 +20,12 @@
             set { _nombre = value; }
         }
 
+        public string apellido
+        {
+            get { return _apellido; }
+            set { _apellido = value; }
+        }
+
         #endregion
 
         #region Constructores
@@ -28,6 +35,13 @@
         public clsPersona(int id, string nombre) {
             _id = id;
             _nombre = nombre;
+        }
+
+        public clsPersona(int id, string nombre, string apellido)
+        {
+            _id = id;
+            _nombre = nombre;
+            _apellido = apellido;
         }
         #endregion
 

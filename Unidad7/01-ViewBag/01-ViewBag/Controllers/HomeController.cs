@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using _01_ViewBag.Models;
 using _01_ViewBag.Models.Entities;
+using _01_ViewBag.Models.DAL;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _01_ViewBag.Controllers
@@ -49,6 +50,24 @@ namespace _01_ViewBag.Controllers
         {
             return View();
         }
+
+        public IActionResult Ejercicio2()
+        {
+
+            List<clsPersona> personas = listadoPersonas.getPersonas();
+
+            return View(personas);
+        }
+
+        public IActionResult Ejercicio3()
+        {
+
+            List<clsPersona> personas = listadoPersonas.getPersonas();
+            clsPersona persona = personas[2];
+
+            return View(persona);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
