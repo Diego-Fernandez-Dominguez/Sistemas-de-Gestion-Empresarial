@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<_01_ViewBag.Models.Entities.clsDepartamento>
+
+
+<table border="1" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var departamento in Model)
+        {
+            <tr>
+                <td>@departamento.idDepartamento</td>
+                <td>@departamento.nombreDepartamento</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.ActionLink("Link Index", "Index", "Home")

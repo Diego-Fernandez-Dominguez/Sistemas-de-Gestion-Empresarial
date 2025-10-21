@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\01-ViewBag",
+    "\\01-ViewBag\\01-ViewBag",
+    "\\01-ViewBag\\01-ViewBag\\Controllers",
+    "\\01-ViewBag\\01-ViewBag\\Models",
+    "\\01-ViewBag\\01-ViewBag\\Views",
+    "\\01-ViewBag\\01-ViewBag\\Views\\Home"
+  ],
+  "SelectedNode": "\\01-ViewBag\\01-ViewBag\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

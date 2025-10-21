@@ -6,6 +6,7 @@
         private int _id;
         private string _nombre;
         private string _apellido;
+        private string _departamento;
 
         #endregion
         #region Getters y setters
@@ -26,6 +27,12 @@
             set { _apellido = value; }
         }
 
+        public string departamento
+        {
+            get { return _departamento; }
+            set { _departamento = value; }
+        }
+
         #endregion
 
         #region Constructores
@@ -42,6 +49,14 @@
             _id = id;
             _nombre = nombre;
             _apellido = apellido;
+        }
+
+        public clsPersona(int id, string nombre, string apellido, string departamento)
+        {
+            _id = id;
+            _nombre = nombre;
+            _apellido = apellido;
+            _departamento = departamento;
         }
         #endregion
 

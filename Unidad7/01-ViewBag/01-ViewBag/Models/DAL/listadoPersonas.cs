@@ -4,8 +4,7 @@ namespace _01_ViewBag.Models.DAL
 {
     public class listadoPersonas
     {
-
-       public static List<clsPersona> getPersonas() { 
+        public static List<clsPersona> getPersonas() { 
 
         return new List<clsPersona>
             {
@@ -15,7 +14,6 @@ namespace _01_ViewBag.Models.DAL
                 new clsPersona(4, "Marta", "López"),
                 new clsPersona(5, "Carlos", "Sánchez"),
                 new clsPersona(6, "Laura", "Fernández")
-
 
             };
         }

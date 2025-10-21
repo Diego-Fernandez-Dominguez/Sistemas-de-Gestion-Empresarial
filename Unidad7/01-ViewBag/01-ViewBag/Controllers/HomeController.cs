@@ -1,8 +1,10 @@
-using System.Diagnostics;
-using _01_ViewBag.Models;
-using _01_ViewBag.Models.Entities;
+﻿using _01_ViewBag.Models;
 using _01_ViewBag.Models.DAL;
+using _01_ViewBag.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Diagnostics;
+
 
 namespace _01_ViewBag.Controllers
 {
@@ -53,7 +55,6 @@ namespace _01_ViewBag.Controllers
 
         public IActionResult Ejercicio2()
         {
-
             List<clsPersona> personas = listadoPersonas.getPersonas();
 
             return View(personas);
@@ -61,13 +62,58 @@ namespace _01_ViewBag.Controllers
 
         public IActionResult Ejercicio3()
         {
-
             List<clsPersona> personas = listadoPersonas.getPersonas();
             clsPersona persona = personas[2];
 
             return View(persona);
         }
 
+        public IActionResult Ejercicio4()
+        {
+
+            List<clsPersona> personas = listadoPersonas.getPersonas();
+
+            var rand = new Random();
+
+            int posicion = rand.Next(personas.Count);
+
+            clsPersona personaAleatoria;
+
+            personaAleatoria = personas[posicion];
+
+            return View(personaAleatoria);
+            
+        }
+
+        public IActionResult Ejercicio4Departamentos()
+        {
+
+            List<clsDepartamento> departamentos = listadoDepartamentos.getDepartamentos();
+
+            return View(departamentos);
+
+        }
+
+        public IActionResult Ejercicio4EditarPersona()
+        {
+
+            var personas = listadoPersonas.getPersonas();
+            var departamentos = listadoDepartamentos.getDepartamentos();
+
+            int posicion = new Random().Next(personas.Count);
+            var personaAleatoria = personas[posicion];
+
+            ViewBag.Departamentos = departamentos;
+
+            return View(personaAleatoria);
+
+        }
+
+        [HttpPost]
+        public IActionResult EditarPersona(clsPersona personaEditada)
+        {
+            return RedirectToAction("Index");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
