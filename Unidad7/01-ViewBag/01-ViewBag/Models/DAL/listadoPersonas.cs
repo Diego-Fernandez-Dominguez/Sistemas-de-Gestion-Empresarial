@@ -4,7 +4,12 @@ namespace _01_ViewBag.Models.DAL
 {
     public class listadoPersonas
     {
-
+        /// <summary>
+        /// Devuelve una lista de personas hardcodeada
+        /// pre: -
+        /// post: none
+        /// </summary>
+        /// <returns></returns>
         public static List<clsPersona> getPersonas() { 
 
         return new List<clsPersona>
