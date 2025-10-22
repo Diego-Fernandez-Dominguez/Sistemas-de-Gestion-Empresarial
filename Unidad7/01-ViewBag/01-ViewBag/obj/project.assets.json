@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\quick\\.nuget\\packages\\": {},
+    "C:\\Users\\diego.fernandez\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\01-ViewBag.csproj",
+      "projectUniqueName": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\01-ViewBag.csproj",
       "projectName": "01-ViewBag",
-      "projectPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\01-ViewBag.csproj",
-      "packagesPath": "C:\\Users\\quick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\obj\\",
+      "projectPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\01-ViewBag.csproj",
+      "packagesPath": "C:\\Users\\diego.fernandez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\quick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diego.fernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

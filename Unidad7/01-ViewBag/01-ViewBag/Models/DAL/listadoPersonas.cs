@@ -4,6 +4,7 @@ namespace _01_ViewBag.Models.DAL
 {
     public class listadoPersonas
     {
+
         public static List<clsPersona> getPersonas() { 
 
         return new List<clsPersona>

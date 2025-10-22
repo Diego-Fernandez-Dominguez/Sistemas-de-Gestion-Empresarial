@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\",
+  "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\views\\home\\ejercicio4editarpersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\models\\entities\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\models\\entities\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\models\\dal\\listadodepartamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\models\\dal\\listadodepartamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\models\\dal\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\models\\dal\\listadopersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\views\\home\\ejercicio4editarpersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\views\\home\\ejercicio4editarpersona.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\01-viewbag\\01-viewbag\\views\\home\\ejercicio4departamentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AD917C5-BEA3-4617-ACBC-A3CE932B22C7}|01-ViewBag\\01-ViewBag.csproj|solutionrelative:01-viewbag\\views\\home\\ejercicio4departamentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "listadoDepartamentos.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Models\\DAL\\listadoDepartamentos.cs",
+              "RelativeDocumentMoniker": "01-ViewBag\\Models\\DAL\\listadoDepartamentos.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Models\\DAL\\listadoDepartamentos.cs",
+              "RelativeToolTip": "01-ViewBag\\Models\\DAL\\listadoDepartamentos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T11:43:32.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ejercicio4Departamentos.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Views\\Home\\Ejercicio4Departamentos.cshtml",
+              "RelativeDocumentMoniker": "01-ViewBag\\Views\\Home\\Ejercicio4Departamentos.cshtml",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Views\\Home\\Ejercicio4Departamentos.cshtml",
+              "RelativeToolTip": "01-ViewBag\\Views\\Home\\Ejercicio4Departamentos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T11:43:25.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "clsPersona.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Models\\Entities\\clsPersona.cs",
+              "RelativeDocumentMoniker": "01-ViewBag\\Models\\Entities\\clsPersona.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Models\\Entities\\clsPersona.cs",
+              "RelativeToolTip": "01-ViewBag\\Models\\Entities\\clsPersona.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T11:37:58.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "listadoPersonas.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Models\\DAL\\listadoPersonas.cs",
+              "RelativeDocumentMoniker": "01-ViewBag\\Models\\DAL\\listadoPersonas.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Models\\DAL\\listadoPersonas.cs",
+              "RelativeToolTip": "01-ViewBag\\Models\\DAL\\listadoPersonas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T11:35:46.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Ejercicio4EditarPersona.cshtml",
-              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Views\\Home\\Ejercicio4EditarPersona.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Views\\Home\\Ejercicio4EditarPersona.cshtml",
               "RelativeDocumentMoniker": "01-ViewBag\\Views\\Home\\Ejercicio4EditarPersona.cshtml",
-              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Views\\Home\\Ejercicio4EditarPersona.cshtml",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Views\\Home\\Ejercicio4EditarPersona.cshtml",
               "RelativeToolTip": "01-ViewBag\\Views\\Home\\Ejercicio4EditarPersona.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvxYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-21T16:15:37.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "01-ViewBag\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\01-ViewBag\\01-ViewBag\\Controllers\\HomeController.cs",
               "RelativeToolTip": "01-ViewBag\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAiwGcAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwGcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T15:38:21.464Z",
               "EditorCaption": ""
