@@ -1,6 +1,7 @@
 ﻿using _01_ViewBag.Models;
 using _01_ViewBag.Models.DAL;
 using _01_ViewBag.Models.Entities;
+using _01_ViewBag.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
@@ -97,15 +98,10 @@ namespace _01_ViewBag.Controllers
         public IActionResult Ejercicio4EditarPersona()
         {
 
-            var personas = listadoPersonas.getPersonas();
-            var departamentos = listadoDepartamentos.getDepartamentos();
+            Ejercicio4EditarPersonaVM vm = new Ejercicio4EditarPersonaVM();
 
-            int posicion = new Random().Next(personas.Count);
-            var personaAleatoria = personas[posicion];
 
-            ViewBag.Departamentos = departamentos;
-
-            return View(personaAleatoria);
+            return View(vm);
 
         }
 
