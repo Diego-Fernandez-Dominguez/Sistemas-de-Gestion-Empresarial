@@ -2,16 +2,22 @@
 
 <div>
 
-    @Model.persona.edad
     <form>
 
-        <label>Nombre:</label>
-        <input type="text" value=@Model.persona.nombre />
-        <br />
-        <label>Edad:</label>
-        <input type="number" value=@Model.persona.edad/>
-        <br />
-        <label>Departamento:</label>
+        <div>
+            @Html.LabelFor(m => m.persona.nombre)
+            @Html.TextBoxFor(m => m.persona.nombre, new { @class = "form-control" })
+        </div>
+
+        <div>
+            @Html.LabelFor(m => m.persona.apellido)
+            @Html.TextBoxFor(m => m.persona.apellido, new { @class = "form-control" })
+        </div>
+
+        <div>
+            @Html.LabelFor(m => m.persona.  edad)
+            @Html.TextBoxFor(m => m.persona.edad, new { type = "number", @class = "form-control" })
+        </div>
         
 
 
