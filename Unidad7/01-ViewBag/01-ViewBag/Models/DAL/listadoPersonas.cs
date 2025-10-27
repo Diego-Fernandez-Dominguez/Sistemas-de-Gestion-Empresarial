@@ -14,12 +14,12 @@ namespace _01_ViewBag.Models.DAL
 
         return new List<clsPersona>
             {
-                new clsPersona(1, "Ana", "Domínguez"),
-                new clsPersona(2, "Juan", "Pérez"),
-                new clsPersona(3, "Luis", "Martínez"),
-                new clsPersona(4, "Marta", "López"),
-                new clsPersona(5, "Carlos", "Sánchez"),
-                new clsPersona(6, "Laura", "Fernández")
+                new clsPersona(1, "Ana", "Domínguez",19, 1),
+                new clsPersona(2, "Juan", "Pérez",18, 2),
+                new clsPersona(3, "Luis", "Martínez",29, 3),
+                new clsPersona(4, "Marta", "López",140, 4),
+                new clsPersona(5, "Carlos", "Sánchez",11, 5),
+                new clsPersona(6, "Laura", "Fernández",65, 6)
 
             };
         }

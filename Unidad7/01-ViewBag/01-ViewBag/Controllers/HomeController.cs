@@ -100,7 +100,6 @@ namespace _01_ViewBag.Controllers
 
             Ejercicio4EditarPersonaVM vm = new Ejercicio4EditarPersonaVM();
 
-
             return View(vm);
 
         }

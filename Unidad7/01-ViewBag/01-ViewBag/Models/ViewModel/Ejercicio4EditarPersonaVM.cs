@@ -1,6 +1,5 @@
 ﻿using _01_ViewBag.Models.DAL;
 using _01_ViewBag.Models.Entities;
-using System.Security.Cryptography;
 
 namespace _01_ViewBag.Models.ViewModel
 {
@@ -13,7 +12,6 @@ namespace _01_ViewBag.Models.ViewModel
         public clsPersona persona
         {
             get { return _persona; }
-            set { _persona = value; }
         }
 
         public List<clsDepartamento> departamentos

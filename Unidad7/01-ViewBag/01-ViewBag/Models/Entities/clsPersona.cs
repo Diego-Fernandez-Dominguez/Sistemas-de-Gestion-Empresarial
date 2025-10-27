@@ -6,6 +6,7 @@
         private int _id;
         private string _nombre;
         private string _apellido;
+        private int _edad;
         private int _departamento;
 
         #endregion
@@ -25,6 +26,12 @@
         {
             get { return _apellido; }
             set { _apellido = value; }
+        }
+
+        public int edad
+        {
+            get { return _edad; }
+            set { _edad = value; }
         }
 
         public int departamento
@@ -49,11 +56,21 @@
             _apellido = apellido;
         }
 
-        public clsPersona(int id, string nombre, string apellido, int departamento)
+        public clsPersona(int id, string nombre, string apellido, int edad)
         {
             _id = id;
             _nombre = nombre;
             _apellido = apellido;
+            _edad = edad;
+            _departamento = departamento;
+        }
+
+        public clsPersona(int id, string nombre, string apellido, int edad, int departamento)
+        {
+            _id = id;
+            _nombre = nombre;
+            _apellido = apellido;
+            _edad = edad;
             _departamento = departamento;
         }
 
@@ -62,6 +79,7 @@
             _id =0 ;
             _nombre ="";
             _apellido ="";
+            _edad = 0;
             _departamento = 0;
         }
         #endregion
