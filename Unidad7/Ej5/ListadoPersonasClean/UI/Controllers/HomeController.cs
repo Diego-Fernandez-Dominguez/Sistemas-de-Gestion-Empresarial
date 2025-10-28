@@ -1,12 +1,17 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 using UI.Models;
+using Domain.Entities;
+using Domain.Interfaces;
+using Domain.Repositories;
+
 
 namespace UI.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly Domain.Repositories.IGetListaPersonas _useCaseListaPersonas;
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -15,7 +20,7 @@ namespace UI.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_useCaseListaPersonas.getListaPersonas());
         }
 
         public IActionResult Privacy()
