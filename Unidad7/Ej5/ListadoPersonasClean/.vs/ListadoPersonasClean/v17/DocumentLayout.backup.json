@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\domain\\interfaces\\igetlistapersonasusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\igetlistapersonasusecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\domain\\usecases\\getlistapersonasusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\getlistapersonasusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA71524A-3D2C-44FA-AB0C-916B21BE5DED}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\compositionroot\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA71524A-3D2C-44FA-AB0C-916B21BE5DED}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad7\\ej5\\listadopersonasclean\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Data",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj",
-              "RelativeDocumentMoniker": "Data\\Data.csproj",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj",
-              "RelativeToolTip": "Data\\Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T13:21:53.655Z",
+              "DocumentIndex": 3,
+              "Title": "Container.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\CompositionRoot\\Container.cs",
+              "RelativeDocumentMoniker": "CompositionRoot\\Container.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\CompositionRoot\\Container.cs",
+              "RelativeToolTip": "CompositionRoot\\Container.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T12:52:22.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Class1.cs",
-              "RelativeDocumentMoniker": "Data\\Class1.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Class1.cs",
-              "RelativeToolTip": "Data\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IGetListaPersonasUseCases.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Interfaces\\IGetListaPersonasUseCases.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IGetListaPersonasUseCases.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Interfaces\\IGetListaPersonasUseCases.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IGetListaPersonasUseCases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:19:43.229Z",
+              "WhenOpened": "2025-10-29T12:35:27.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "Domain\\Class1.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Class1.cs",
-              "RelativeToolTip": "Domain\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GetListaPersonasUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\UseCases\\GetListaPersonasUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\GetListaPersonasUseCase.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\UseCases\\GetListaPersonasUseCase.cs",
+              "RelativeToolTip": "Domain\\UseCases\\GetListaPersonasUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:19:17.18Z",
+              "WhenOpened": "2025-10-29T12:34:59.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T12:30:54.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T12:22:55.933Z",
               "EditorCaption": ""
             }
           ]

@@ -11,7 +11,7 @@ namespace UI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly Domain.Repositories.IGetListaPersonas _useCaseListaPersonas;
+        private readonly Domain.UseCases.GetListaPersonasUseCase _useCaseListaPersonas;
 
         public HomeController(ILogger<HomeController> logger)
         {

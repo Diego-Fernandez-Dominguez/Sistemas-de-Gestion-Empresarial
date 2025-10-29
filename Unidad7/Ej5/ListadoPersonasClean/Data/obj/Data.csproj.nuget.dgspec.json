@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj": {}
+    "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj": {
+    "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\quick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\obj\\",
+        "projectPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\diego.fernandez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\quick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diego.fernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj"
+              "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj"
               }
             }
           }
@@ -74,20 +74,20 @@
         }
       }
     },
-    "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj": {
+    "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\quick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\diego.fernandez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\quick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diego.fernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

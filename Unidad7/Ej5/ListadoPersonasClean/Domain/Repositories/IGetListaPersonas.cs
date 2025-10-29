@@ -10,6 +10,5 @@ namespace Domain.Repositories
     public interface IGetListaPersonas
     {
         clsPersona[] getListaPersonas();
-        List<clsPersona> GetListaPersonas();
     }
 }

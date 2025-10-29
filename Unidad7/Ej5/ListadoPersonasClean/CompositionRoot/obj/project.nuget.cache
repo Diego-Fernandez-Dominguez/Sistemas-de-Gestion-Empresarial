@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/fkOdkPDCHU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad7\\Ej5\\ListadoPersonasClean\\CompositionRoot\\CompositionRoot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diego.fernandez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

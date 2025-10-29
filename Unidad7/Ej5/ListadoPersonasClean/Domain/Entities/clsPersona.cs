@@ -52,8 +52,6 @@ namespace Domain.Entities
             _id = 0;
             _nombre = "";
             _apellido = "";
-            _edad = 0;
-            _departamento = 0;
         }
 
         #endregion

@@ -1,16 +1,12 @@
 ﻿using Domain.Entities;
+using Domain.Interfaces;
 using Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.UseCases
 {
-    public class GetListaPersonasUseCase
+    public class GetListaPersonasUseCase : IGetListaPersonasUseCases
     {
-        private readonly IGetListaPersonas _repo;
+        private IGetListaPersonas _repo;
 
         // Inyección del repositorio (la implementación viene desde la capa Data)
         public GetListaPersonasUseCase(IGetListaPersonas repo)

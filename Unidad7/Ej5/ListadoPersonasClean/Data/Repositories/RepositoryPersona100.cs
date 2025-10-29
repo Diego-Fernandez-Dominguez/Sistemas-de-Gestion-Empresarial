@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data.Repositories
 {
-    internal class RepositoryPersonas100 : IGetListaPersonas
+    public class RepositoryPersonas100 : IGetListaPersonas
     {
 
             public clsPersona[] getListaPersonas()
@@ -116,6 +116,7 @@ namespace Data.Repositories
                 new clsPersona(100, "Cristina", "Vega")
             ];
             }
-        }
+
+    }
 
     }

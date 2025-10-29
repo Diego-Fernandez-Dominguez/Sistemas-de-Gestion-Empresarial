@@ -8,7 +8,7 @@ using Domain.Repositories;
 
 namespace Data.Repositories
 {
-    internal class RepositoryPersonas : IGetListaPersonas
+    public class RepositoryPersonas : IGetListaPersonas
     {
 
         // Constructor
