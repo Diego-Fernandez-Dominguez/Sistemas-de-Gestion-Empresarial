@@ -22,7 +22,7 @@ namespace Domain.UseCases
         {
             // Aquí podrías agregar lógica de negocio adicional:
             // Ej: filtrar, ordenar, validar, etc.
-            var personas = _repo.GetListaPersonas();
+            var personas = getListaPersonas();
             return personas;
         }
     }

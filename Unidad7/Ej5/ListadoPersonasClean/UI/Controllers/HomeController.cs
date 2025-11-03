@@ -4,6 +4,7 @@ using UI.Models;
 using Domain.Entities;
 using Domain.Interfaces;
 using Domain.Repositories;
+using Domain.UseCases;
 
 
 namespace UI.Controllers
@@ -11,16 +12,18 @@ namespace UI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly Domain.UseCases.GetListaPersonasUseCase _useCaseListaPersonas;
+        private IGetListaPersonasUseCases _listaPersonasUseCase;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IGetListaPersonasUseCases useCases)
         {
             _logger = logger;
+            _listaPersonasUseCase = useCases;
         }
 
         public IActionResult Index()
         {
-            return View(_useCaseListaPersonas.getListaPersonas());
+            var personas = _listaPersonasUseCase.getListaPersonas();
+            return View(personas);
         }
 
         public IActionResult Privacy()

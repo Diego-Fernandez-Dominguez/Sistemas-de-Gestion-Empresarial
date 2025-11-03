@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad8\\01_formulario\\01_formulario\\views\\home\\saludo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|solutionrelative:01_formulario\\views\\home\\saludo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad8\\01_formulario\\01_formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|solutionrelative:01_formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad8\\01_formulario\\01_formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|solutionrelative:01_formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad8\\01_formulario\\01_formulario\\models\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E44EEC6-E3C2-4206-B343-5F98EB66F00A}|01_Formulario\\01_Formulario.csproj|solutionrelative:01_formulario\\models\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Saludo.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Views\\Home\\Saludo.cshtml",
+              "RelativeDocumentMoniker": "01_Formulario\\Views\\Home\\Saludo.cshtml",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Views\\Home\\Saludo.cshtml",
+              "RelativeToolTip": "01_Formulario\\Views\\Home\\Saludo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T13:37:36.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "01_Formulario\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "01_Formulario\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T13:08:52.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "01_Formulario\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "01_Formulario\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T13:11:27.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsPersona.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Models\\clsPersona.cs",
+              "RelativeDocumentMoniker": "01_Formulario\\Models\\clsPersona.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\01_Formulario\\01_Formulario\\Models\\clsPersona.cs",
+              "RelativeToolTip": "01_Formulario\\Models\\clsPersona.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwDEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T13:05:26.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

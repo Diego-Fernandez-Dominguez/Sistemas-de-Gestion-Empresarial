@@ -1,20 +1,21 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Data.Repositories;
+﻿using Data.Repositories;
 using Domain.Interfaces;
 using Domain.UseCases;
 using Domain.Repositories;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 namespace CompositionRoot
 {
     public static class Container
     {
-        public static IServiceProvider AddCompositionRoot(this IServiceCollection services)
+        public static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
         {
             // Aquí se registran las dependencias entre capas
             // Ejemplo:
             services.AddScoped<IGetListaPersonas, RepositoryPersonas>();
             services.AddScoped<IGetListaPersonasUseCases, GetListaPersonasUseCase>();
-            return services.BuildServiceProvider();
+            return services;
         }
     }
 }

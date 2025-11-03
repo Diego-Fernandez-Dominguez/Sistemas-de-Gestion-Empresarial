@@ -231,3 +231,10 @@ C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad
 C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\obj\Debug\net8.0\UI.pdb
 C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\obj\Debug\net8.0\UI.genruntimeconfig.cache
 C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\obj\Debug\net8.0\ref\UI.dll
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\CompositionRoot.dll
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\Data.dll
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\CompositionRoot.pdb
+C:\Users\diego.fernandez\Documents\GitHub\Sistemas-de-Gestion-Empresarial\Unidad7\Ej5\ListadoPersonasClean\UI\bin\Debug\net8.0\Data.pdb

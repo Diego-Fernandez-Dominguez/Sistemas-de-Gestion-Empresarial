@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{E2009325-FCC0-4F44-AC88-4DE772547AE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FA71524A-3D2C-44FA-AB0C-916B21BE5DED} = {FA71524A-3D2C-44FA-AB0C-916B21BE5DED}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}"
 EndProject
