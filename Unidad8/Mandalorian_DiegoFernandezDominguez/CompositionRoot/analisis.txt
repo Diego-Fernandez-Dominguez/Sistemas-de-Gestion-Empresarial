@@ -1,0 +1,39 @@
+CompositionRoot/
+	DI
+
+Domain/
+	Entities/
+		clsMision
+			- Nombre : string
+			- Descripcion : string
+			- Recompensa : int
+	UseCases/
+		MisionesUseCase : IUseCase
+			+ List<clsMision> getMisiones()
+			+ Mision getMisionById(int id)
+
+	Interfaces/
+		UseCasesInterfaces/
+			IUseCase
+				+ List<clsMision> getMisiones()
+				+ Mision getMisionById(int id)
+				
+		IRepositoriesInterfaces/
+			IRepositoryMision
+				+ List<clsMision> getMisiones()
+
+Data/
+	Repositories/
+		RepositoryMision
+			+ List<clsMision> getMisiones()
+
+UI/
+	Models/
+		IndexVM
+			- <List<clsMision> ListadoDeMisiones
+			-Mision MisionSeleccionada
+	Controllers/
+		HomeController
+			+ IActionResult Index()
+	Views/
+		Index
