@@ -4,6 +4,7 @@ CompositionRoot/
 Domain/
 	Entities/
 		clsMision
+			- Id : int
 			- Nombre : string
 			- Descripcion : string
 			- Recompensa : int
@@ -24,14 +25,14 @@ Domain/
 
 Data/
 	Repositories/
-		RepositoryMision
+		RepositoryMision : IRepositoryMision
 			+ List<clsMision> getMisiones()
 
 UI/
 	Models/
 		IndexVM
 			- <List<clsMision> ListadoDeMisiones
-			-Mision MisionSeleccionada
+			- Mision MisionSeleccionada
 	Controllers/
 		HomeController
 			+ IActionResult Index()

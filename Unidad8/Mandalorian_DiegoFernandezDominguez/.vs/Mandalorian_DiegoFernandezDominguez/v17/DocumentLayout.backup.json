@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\Mandalorian_DiegoFernandezDominguez\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7800C59-747A-4692-A75B-B4AD7E09DBB9}|CompositionRoot\\CompositionRoot.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad8\\mandalorian_diegofernandezdominguez\\compositionroot\\analisis.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F7800C59-747A-4692-A75B-B4AD7E09DBB9}|CompositionRoot\\CompositionRoot.csproj|solutionrelative:compositionroot\\analisis.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "analisis.txt",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\Mandalorian_DiegoFernandezDominguez\\CompositionRoot\\analisis.txt",
+              "RelativeDocumentMoniker": "CompositionRoot\\analisis.txt",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad8\\Mandalorian_DiegoFernandezDominguez\\CompositionRoot\\analisis.txt",
+              "RelativeToolTip": "CompositionRoot\\analisis.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-05T12:32:14.49Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
