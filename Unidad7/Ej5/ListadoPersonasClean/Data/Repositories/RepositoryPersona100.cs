@@ -11,7 +11,7 @@ namespace Data.Repositories
     public class RepositoryPersonas100 : IGetListaPersonas
     {
 
-            public clsPersona[] getListaPersonas()
+            public List<clsPersona> getListaPersonas()
             {
                 return [
                     new clsPersona(1, "Ana", "Domínguez"),

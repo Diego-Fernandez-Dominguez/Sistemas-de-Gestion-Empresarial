@@ -13,7 +13,7 @@ namespace CompositionRoot
         {
             // Aquí se registran las dependencias entre capas
             // Ejemplo:
-            services.AddScoped<IGetListaPersonas, RepositoryPersonas>();
+            services.AddScoped<IGetListaPersonas, PersonasRepositoryAzure>();
             services.AddScoped<IGetListaPersonasUseCases, GetListaPersonasUseCase>();
             return services;
         }

@@ -14,6 +14,10 @@ namespace Domain.Entities
         private int _id;
         private string _nombre;
         private string _apellido;
+        private DateTime _fechaNac;
+        private string _direccion;
+        private string _telefono;
+
 
         #endregion
         #region Getters y setters
@@ -34,6 +38,24 @@ namespace Domain.Entities
         {
             get { return _apellido; }
             set { _apellido = value; }
+        }
+
+        public DateTime fechaNac
+        {
+            get { return _fechaNac; }
+            set { _fechaNac = value; }
+        }
+
+        public string direccion
+        {
+            get { return _direccion; }
+            set { _direccion = value; }
+        }
+
+        public string telefono
+        {
+            get { return _telefono; }
+            set { _telefono = value; }
         }
 
         #endregion

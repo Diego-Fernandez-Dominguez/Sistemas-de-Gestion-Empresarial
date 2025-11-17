@@ -4,6 +4,6 @@ namespace Domain.Interfaces
 {
     public interface IGetListaPersonasUseCases
     {
-        public clsPersona[] getListaPersonas();
+        public List<clsPersona> getListaPersonas();
     }
 }

@@ -18,7 +18,7 @@ namespace Domain.UseCases
         /// Ejecuta la lógica del caso de uso.
         /// </summary>
         /// <returns>Lista de personas.</returns>
-        public clsPersona[] getListaPersonas()
+        public List<clsPersona> getListaPersonas()
         {
             var personas = _repo.getListaPersonas();
             return personas;

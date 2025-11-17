@@ -12,7 +12,7 @@ namespace Data.Repositories
     {
 
         // Constructor
-        public clsPersona[] getListaPersonas()
+        public List<clsPersona> getListaPersonas()
         {
             return [
 

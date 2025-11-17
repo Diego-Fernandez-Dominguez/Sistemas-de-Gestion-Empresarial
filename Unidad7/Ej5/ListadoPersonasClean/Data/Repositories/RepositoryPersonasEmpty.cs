@@ -10,7 +10,7 @@ namespace Data.Repositories
 {
     public class RepositoryPersonasEmpty : IGetListaPersonas
     {
-        public clsPersona[] getListaPersonas()
+        public List<clsPersona> getListaPersonas()
         {
             return [
 
