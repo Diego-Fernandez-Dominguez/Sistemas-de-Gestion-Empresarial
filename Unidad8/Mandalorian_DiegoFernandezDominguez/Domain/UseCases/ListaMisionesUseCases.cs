@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces.UseCasesInterfaces;
+using Domain.Interfaces.RepositoriesInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace Domain.UseCases
 {
     public class ListaMisionesUseCases: IListaMisionesUseCases 
     {
-        private readonly IListaMisionesUseCases _repositoryMision;
+        private readonly IRepositoryMision _repositoryMision;
 
-        public ListaMisionesUseCases(IListaMisionesUseCases repositoryMision)
+        public ListaMisionesUseCases(IRepositoryMision repositoryMision)
         {
             _repositoryMision = repositoryMision;
         }
