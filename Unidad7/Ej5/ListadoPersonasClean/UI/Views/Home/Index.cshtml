@@ -21,6 +21,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.apellido)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaNac)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -36,6 +42,17 @@
             <td>
                 @Html.DisplayFor(modelItem => item.apellido)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.direccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaNac)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
         </tr>
 }
     </tbody>

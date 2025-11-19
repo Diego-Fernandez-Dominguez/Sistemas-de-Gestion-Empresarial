@@ -26,6 +26,11 @@ namespace UI.Controllers
             return View(personas);
         }
 
+        public IActionResult Details(int id)
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
