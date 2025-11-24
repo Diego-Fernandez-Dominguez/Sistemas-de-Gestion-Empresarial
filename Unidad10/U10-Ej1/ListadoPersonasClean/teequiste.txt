@@ -1,0 +1,80 @@
+Domain/
+	Entities/
+		clsDepartamento.cs
+			- int _id {get}
+			- String _nombre {get/set}
+
+			+Getters/Setters()
+
+			+ clsDepartamento(int id, string nombre)
+
+		clsPersona.cs
+			- int _id {get;}
+			- string _nombre {get/set}
+			- string _apellido {get/set}
+			- DateTime _fechaNac {get/set}
+			- string _direccion {get/set}
+			- string _telefono {get/set}
+			- int _departamentoId {get/set}
+
+			+Getters/Setters()
+
+			+ clsPersona(int id, string nombre, string apellido, DateTime fechaNac, string direccion, string telefono, int departamentoId)
+
+
+	Interfaces/
+		Repositories/
+			IRepositorioDepartamento.cs
+				+ List<clsDepartamento>  GetListaDepartamentos()
+				+ clsDepartamento GetDepartamentoPorId(int id)
+				+ boolean AddDepartamento(clsDepartamento departamento)
+				+ boolean UpdateDepartamento(clsDepartamento departamento)
+				+ boolean DeleteDepartamento(int id)
+
+			IRepositorioPersona.cs
+				+ List<clsPersona>  GetListaPersonas()
+				+ clsPersona GetPersonaPorId(int id)
+				+ boolean AddPersona(clsPersona persona)
+				+ boolean UpdatePersona(clsPersona persona)
+				+ boolean DeletePersona(int id)
+
+		UseCases/
+			IUseCasePersonas.cs
+			IUseCaseDepartamentos.cs
+
+	UseCases/
+		UseCasePersonas.cs
+		UseCaseDepartamentos.cs
+
+	DTO/
+		PersonaWithDepartamentosDTO.cs
+			- clsPersona _persona {get;}
+			- List<clsDepartamento> _departamentos {get;}
+
+		PersonaWithNombreDepartamentoDTO.cs
+			- clsPersona _persona {get;}
+			- String _nombreDepartamento {get;}
+		
+
+Data/
+	Repositories/
+		RepositoryPersonas.cs
+			+ List<clsPersona> GetListaPersonas()
+			+ clsPersona GetPersonaPorId(int id)
+			+ boolean AddPersona(clsPersona persona)
+			+ boolean UpdatePersona(clsPersona persona)
+			+ boolean DeletePersona(int id)
+
+		RepositoryDepartamento.cs
+			+ List<clsDepartamento>  public GetListaDepartamentos()
+			+ clsDepartamento GetDepartamentoPorId(int id)
+			+ boolean AddDepartamento(clsDepartamento departamento)
+			+ boolean UpdateDepartamento(clsDepartamento departamento)
+			+ boolean DeleteDepartamento(int id)
+
+
+	Database/
+		Connection.cs
+
+
+UI/
