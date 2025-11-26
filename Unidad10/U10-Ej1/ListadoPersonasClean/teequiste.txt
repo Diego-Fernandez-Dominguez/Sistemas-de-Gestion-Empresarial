@@ -14,63 +14,91 @@ Domain/
 			- string _apellido {get/set}
 			- DateTime _fechaNac {get/set}
 			- string _direccion {get/set}
-			- string _telefono {get/set}
+			- string _telefono {get/set)
+			- string _imagen {get/set}
 			- int _departamentoId {get/set}
 
 			+Getters/Setters()
 
-			+ clsPersona(int id, string nombre, string apellido, DateTime fechaNac, string direccion, string telefono, int departamentoId)
+			+ clsPersona(int id, string nombre, string apellido, DateTime fechaNac, string direccion, string telefono, string imagen, int departamentoId)
 
 
 	Interfaces/
 		Repositories/
 			IRepositorioDepartamento.cs
-				+ List<clsDepartamento>  GetListaDepartamentos()
-				+ clsDepartamento GetDepartamentoPorId(int id)
-				+ boolean AddDepartamento(clsDepartamento departamento)
-				+ boolean UpdateDepartamento(clsDepartamento departamento)
-				+ boolean DeleteDepartamento(int id)
+				+ List<clsDepartamento>  getListaDepartamentos()
+				+ clsDepartamento getDepartamentoPorId(int id)
+				+ int añadirDepartamento(clsDepartamento departamento)
+				+ int actualizarDepartamento(clsDepartamento departamento)
+				+ int eliminarDepartamento(int id)
 
 			IRepositorioPersona.cs
-				+ List<clsPersona>  GetListaPersonas()
-				+ clsPersona GetPersonaPorId(int id)
-				+ boolean AddPersona(clsPersona persona)
-				+ boolean UpdatePersona(clsPersona persona)
-				+ boolean DeletePersona(int id)
+				+ List<clsPersona>  getListaPersonas()
+				+ clsPersona getPersonaPorId(int id)
+				+ int añadirPersona(clsPersona persona)
+				+ int actualizarPersona(clsPersona persona)
+				+ int eliminarPersona(int id)
+				+ int contarPersonasDepartamento(int idDepartamento)
 
 		UseCases/
-			IUseCasePersonas.cs
-			IUseCaseDepartamentos.cs
+			IPersonaUseCase.cs
+			IDepartamentosUseCase.cs
 
 	UseCases/
-		UseCasePersonas.cs
-		UseCaseDepartamentos.cs
+		PersonaUseCase.cs
+			- IPersonaRepository _repositorioPersona
+			- IDepartamentoRepository _repositorioDepartamento
+			+ PersonaRepositoryUseCase(IRepositorioPersona repositorioPersona, IRepositorioDepartamento repositorioDepartamento)
+			{_repositorioPersona = repositorioPersona;
+				_repositorioDepartamento = repositorioDepartamento;} inyeccion
+
+			+ List<PersonaWithNombreDepartamentoDTO> getPersonasConNombreDepartamento()
+			+ PersonaWithDepartamentosDTO getPersonaConDepartamentos(int idPersona)
+			+ PersonaWithNombreDepartamentoDTO getPersonaConNombreDepartamento(int idPersona)
+			+ boolean añadirPersona(clsPersona persona)
+			+ boolean actualizarPersona(clsPersona persona)
+			+ boolean eliminarPersona(int id)
+
+		DepartamentosUseCase.cs
+			- IDepartamentoRepository _repositorioDepartamento
+			+ PersonaRepositoryUseCase(IRepositorioDepartamento repositorioDepartamento)
+			{_repositorioDepartamento = repositorioDepartamento;} inyeccion
+
+			+ List<clsDepartamento> getListaDepartamentos()
+			+ boolean añadirDepartamento(clsDepartamento departamento)
+			+ boolean actualizarDepartamento(clsDepartamento departamento)
+			+ boolean eliminarDepartamento(int id)
+
 
 	DTO/
-		PersonaWithDepartamentosDTO.cs
-			- clsPersona _persona {get;}
-			- List<clsDepartamento> _departamentos {get;}
+		PersonaWithDepartamentosDTO.cs inyecta el IRepositorioDepartamento
+			- clsPersona _persona {get} (se recomienda volver a poner todos los campos)
+			- List<clsDepartamento> _departamentos {get}
 
-		PersonaWithNombreDepartamentoDTO.cs
+			+ PersonaWithDepartamentosDTO(clsPersona persona)
+
+		PersonaWithNombreDepartamentoDTO.cs inyecta el IRepositorioDepartamento
 			- clsPersona _persona {get;}
 			- String _nombreDepartamento {get;}
 		
+			+ PersonaWithNombreDepartamentoDTO(clsPersona persona)
 
 Data/
 	Repositories/
 		RepositoryPersonas.cs
-			+ List<clsPersona> GetListaPersonas()
+			+ List<clsPersona> GetListaPersonas() devuelve la lista obtenida de la BBDD
 			+ clsPersona GetPersonaPorId(int id)
-			+ boolean AddPersona(clsPersona persona)
-			+ boolean UpdatePersona(clsPersona persona)
-			+ boolean DeletePersona(int id)
+			+ int addPersona(clsPersona persona)
+			+ int updatePersona(int idPersona, clsPersona persona)
+			+ int deletePersona(int id)
 
 		RepositoryDepartamento.cs
-			+ List<clsDepartamento>  public GetListaDepartamentos()
+			+ List<clsDepartamento> public GetListaDepartamentos() devuelve la lista obtenida de la BBDD
 			+ clsDepartamento GetDepartamentoPorId(int id)
-			+ boolean AddDepartamento(clsDepartamento departamento)
-			+ boolean UpdateDepartamento(clsDepartamento departamento)
-			+ boolean DeleteDepartamento(int id)
+			+ int addDepartamento(clsDepartamento departamento)
+			+ int updateDepartamento(int idDepartamento, clsDepartamento departamento)
+			+ int deleteDepartamento(int id)
+			+ int contarPersonasDepartamento(int idDepartamento)
 
 
 	Database/
@@ -78,3 +106,52 @@ Data/
 
 
 UI/
+	controllers/
+		PersonaController.cs inyeccion del IPersonasUseCase
+			+ IActionResult Editar(PersonaWithDepartamentosDTO personaConDepartamentos))
+			[HTTPost]
+			+ IActionResult Editar(int idPersona, clsPersona personaActualizada)
+			+ IActionResult Mostrar()
+			+ IActionResult Eliminar(int idPersona)
+			[HTTPPost]
+			[ActionName =(Eliminar)]
+			+ IActionResult Eliminar(int idPersona)
+			+ IActionResult Crear() return List<clsDepartamento> listadoDepartamentos
+			[HTTPPost]
+			+ IActionResult Crear(clsPersona nuevaPersona)
+			+ IActionResult Detalles(int idPersona)
+
+		DepartamentoController.cs inyeccion del IDepartamentosUseCase
+			+ IActionResult Editar(clsDepartamento departamento))
+			[HTTPost]
+			+ IActionResult Editar(int idDepartamento, clsDepartamento departamento)
+			+ IActionResult Mostrar()
+			+ IActionResult Eliminar(int idDepartamento)
+			[HTTPPost]
+			[ActionName =(Eliminar)]
+			+ IActionResult Eliminar(int idDepartamento)
+			+ IActionResult Crear()
+			[HTTPPost]
+			+ IActionResult Crear(clsDepartamento departamentoNuevo)
+			+ IActionResult Detalles(int idDepartamento)
+
+		models/
+
+		views/
+			home/
+				Index.cshtml
+				Privacy.cshtml
+			departamento/
+				Crear.cshtml
+				Detalles.cshtml
+				Editar.cshtml
+				Eliminar.cshtml
+				Mostrar.cshtml
+			persona/
+				Crear.cshtml
+				Detalles.cshtml
+				Editar.cshtml
+				Eliminar.cshtml
+				Mostrar.cshtml
+
+

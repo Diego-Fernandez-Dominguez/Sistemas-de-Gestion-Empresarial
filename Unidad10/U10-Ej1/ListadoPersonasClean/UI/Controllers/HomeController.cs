@@ -12,9 +12,9 @@ namespace UI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private IUseCasePersona _listaPersonasUseCase;
+        private IPersonaUseCase _listaPersonasUseCase;
 
-        public HomeController(ILogger<HomeController> logger, IUseCasePersona useCases)
+        public HomeController(ILogger<HomeController> logger, IPersonaUseCase useCases)
         {
             _logger = logger;
             _listaPersonasUseCase = useCases;

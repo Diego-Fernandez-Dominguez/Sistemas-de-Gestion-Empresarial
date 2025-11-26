@@ -9,7 +9,16 @@ namespace Domain.Interfaces.Repositories
 {
     public interface IRepoDepartamento
     {
-        List<clsDepartamento> GetListaDepartamentos();
+        public List<clsDepartamento> getListaDepartamentos();
+
+        public clsDepartamento getDepartamentoPorID(int departamentoID);
+
+        public int añadirDepartamento(clsDepartamento departamento);
+
+        public int actualizarDepartamento(clsDepartamento departamento);
+
+        public int eliminarDepartamento(int departamentoID);
+
 
     }
 }

@@ -14,7 +14,7 @@ namespace CompositionRoot
             // Aquí se registran las dependencias entre capas
             // Ejemplo:
             services.AddScoped<IRepoPersona, RepositoryPersonas>();
-            services.AddScoped<IUseCasePersona, UseCase>();
+            services.AddScoped<IPersonaUseCase, UseCase>();
             return services;
         }
     }

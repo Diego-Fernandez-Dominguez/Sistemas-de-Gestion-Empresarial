@@ -4,7 +4,7 @@ using Domain.Interfaces.UseCases;
 
 namespace Domain.UseCases
 {
-    public class UseCase : IUseCasePersona
+    public class UseCase : IPersonaUseCase
     {
         private IRepoPersona _repo;
 

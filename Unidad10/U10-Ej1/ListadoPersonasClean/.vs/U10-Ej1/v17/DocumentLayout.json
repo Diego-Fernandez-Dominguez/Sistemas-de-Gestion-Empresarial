@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\interfaces\\usecases\\ipersonausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\usecases\\ipersonausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\teequiste.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:teequiste.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\data\\repositories\\repositorydepartamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\repositories\\repositorydepartamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\data\\repositories\\repositorypersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\repositories\\repositorypersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\entities\\clsdepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\clsdepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\entities\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\clspersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +18,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPersonaUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:22:50.469Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "529f0231-44bc-4e0d-b190-a45698ac1f30",
+        "Display": 0,
+        "X": 357,
+        "Y": 436,
+        "Width": 1018,
+        "Height": 786,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RepositoryDepartamentos.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryDepartamentos.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\RepositoryDepartamentos.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryDepartamentos.cs",
-              "RelativeToolTip": "Data\\Repositories\\RepositoryDepartamentos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T12:53:11.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositoryPersonas.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryPersonas.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\RepositoryPersonas.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryPersonas.cs",
-              "RelativeToolTip": "Data\\Repositories\\RepositoryPersonas.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T12:51:45.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
-              "RelativeDocumentMoniker": "Data\\Database\\Connection.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Database\\Connection.cs",
-              "RelativeToolTip": "Data\\Database\\Connection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T12:49:09.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsPersona.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Entities\\clsPersona.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\clsPersona.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Entities\\clsPersona.cs",
-              "RelativeToolTip": "Domain\\Entities\\clsPersona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T12:45:20.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clsDepartamento.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Entities\\clsDepartamento.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\clsDepartamento.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Entities\\clsDepartamento.cs",
-              "RelativeToolTip": "Domain\\Entities\\clsDepartamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T12:45:08.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "teequiste.txt",
               "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\teequiste.txt",
               "RelativeDocumentMoniker": "teequiste.txt",
               "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\teequiste.txt",
               "RelativeToolTip": "teequiste.txt",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAIwJ0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-11-24T12:31:11.94Z",
               "EditorCaption": ""

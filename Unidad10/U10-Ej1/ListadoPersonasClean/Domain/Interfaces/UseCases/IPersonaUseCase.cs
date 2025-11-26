@@ -2,8 +2,9 @@
 
 namespace Domain.Interfaces.UseCases
 {
-    public interface IUseCasePersona
+    public interface IPersonaUseCase
     {
         public List<clsPersona> getListaPersonas();
+
     }
 }
