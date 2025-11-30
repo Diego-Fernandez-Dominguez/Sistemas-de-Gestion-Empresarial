@@ -15,11 +15,10 @@ namespace Domain.Interfaces.Repositories
 
         public int añadirPersona(clsPersona persona);
 
-        public int actualizarPersona(clsPersona persona);
+        public int actualizarPersona(int idPersona, clsPersona persona);
 
         public int eliminarPersona(int personaID);
 
         public int contarPersonasDepartamentos(int idDepartamento);
-
     }
 }

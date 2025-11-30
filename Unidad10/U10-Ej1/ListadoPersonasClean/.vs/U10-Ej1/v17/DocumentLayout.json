@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
+  "WorkspaceRootPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\interfaces\\usecases\\ipersonausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\usecases\\ipersonausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\views\\persona\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\views\\persona\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\teequiste.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:teequiste.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\views\\departamento\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\views\\departamento\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,49 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IPersonaUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\UseCases\\IPersonaUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:22:50.469Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Persona\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Persona\\Index.cshtml",
+              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Persona\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Persona\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T20:25:27.858Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "529f0231-44bc-4e0d-b190-a45698ac1f30",
-        "Display": 0,
-        "X": 357,
-        "Y": 436,
-        "Width": 1018,
-        "Height": 786,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T20:21:39.536Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "teequiste.txt",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\teequiste.txt",
-              "RelativeDocumentMoniker": "teequiste.txt",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\teequiste.txt",
-              "RelativeToolTip": "teequiste.txt",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAIwJ0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-24T12:31:11.94Z",
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "UI\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:42:54.576Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Departamento\\Delete.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Departamento\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Departamento\\Delete.cshtml",
+              "RelativeToolTip": "UI\\Views\\Departamento\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T19:39:27.337Z"
             }
           ]
         }

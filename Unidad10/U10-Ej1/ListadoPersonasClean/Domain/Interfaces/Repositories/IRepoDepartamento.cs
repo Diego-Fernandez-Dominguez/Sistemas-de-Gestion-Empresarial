@@ -15,10 +15,9 @@ namespace Domain.Interfaces.Repositories
 
         public int añadirDepartamento(clsDepartamento departamento);
 
-        public int actualizarDepartamento(clsDepartamento departamento);
+        public int actualizarDepartamento(int idDepartamento, clsDepartamento departamento);
 
         public int eliminarDepartamento(int departamentoID);
-
 
     }
 }

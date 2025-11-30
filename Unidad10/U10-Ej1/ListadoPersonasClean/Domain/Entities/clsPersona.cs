@@ -16,7 +16,9 @@ namespace Domain.Entities
         private string _apellido;
         private DateTime _fechaNac;
         private string _direccion;
+        private string _imagen;
         private string _telefono;
+        private int _idDepartamento;
 
 
         #endregion
@@ -57,16 +59,32 @@ namespace Domain.Entities
             get { return _telefono; }
             set { _telefono = value; }
         }
+        public string imagen
+        {
+            get { return _imagen; }
+            set { _imagen = value; }
+        }
+
+        public int idDepartamento
+        {
+            get { return _idDepartamento; }
+            set { _idDepartamento = value; }
+        }
 
         #endregion
 
         #region Constructores
 
-        public clsPersona(int id, string nombre, string apellido)
+        public clsPersona(int id, string nombre, string apellidos, DateTime fechaNacimiento, string direccion, string telefono, string imagen, int idDepartamento)
         {
             _id = id;
             _nombre = nombre;
-            _apellido = apellido;
+            _apellido = apellidos;
+            _fechaNac = fechaNacimiento;
+            _direccion = direccion;
+            _telefono = telefono;
+            _idDepartamento = idDepartamento;
+            _imagen = imagen;
         }
 
         public clsPersona()

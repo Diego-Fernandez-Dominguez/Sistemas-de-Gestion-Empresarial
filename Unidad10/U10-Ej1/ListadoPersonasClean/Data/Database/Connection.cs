@@ -8,7 +8,7 @@ namespace Data.Database
 {
     internal class Connection
     {
-        public static string GetConnectionString()
+        public static string getConnectionString()
         {
             return "server=dferdom.database.windows.net;database=PersonasDB;uid=prueba;pwd=123abc|@#;trustServerCertificate = true;";
         }

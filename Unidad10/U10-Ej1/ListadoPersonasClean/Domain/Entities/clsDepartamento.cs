@@ -11,6 +11,9 @@ namespace Domain.Entities
         #region Atributos privados
 
         private int _id;
+        private string _nombre;
+
+
 
         #endregion
 
@@ -20,12 +23,21 @@ namespace Domain.Entities
             get { return _id; }
             set { _id = value; }
         }
+        public string nombre
+        {
+            get { return _nombre; }
+            set { _nombre = value; }
+        }
 
         #endregion
 
         #region Constructores
 
-
+        public clsDepartamento(int id, string nombre)
+        {
+            _id = id;
+            _nombre = nombre;
+        }
 
         #endregion
 

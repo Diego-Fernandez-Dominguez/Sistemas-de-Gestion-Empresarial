@@ -1,32 +1,19 @@
+using UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using UI.Models;
-using Domain.Entities;
-using Domain.Repositories;
-using Domain.UseCases;
-using Domain.Interfaces.UseCases;
 
-
-namespace UI.Controllers
+namespace ListadoPersonasYDepartamentos.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private IPersonaUseCase _listaPersonasUseCase;
 
-        public HomeController(ILogger<HomeController> logger, IPersonaUseCase useCases)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _listaPersonasUseCase = useCases;
         }
 
         public IActionResult Index()
-        {
-            var personas = _listaPersonasUseCase.getListaPersonas();
-            return View(personas);
-        }
-
-        public IActionResult Details(int id)
         {
             return View();
         }
