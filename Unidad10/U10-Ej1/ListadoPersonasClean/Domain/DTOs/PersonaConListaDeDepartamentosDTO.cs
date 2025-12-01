@@ -10,7 +10,7 @@ namespace Domain.DTOs
 {
     public class PersonaConListaDeDepartamentosDTO
     {
-        public clsPersona Persona { get; }
+        public clsPersona Persona { get; set; }
         public List<clsDepartamento> Departamentos { get; }
 
         public PersonaConListaDeDepartamentosDTO(clsPersona persona, List<clsDepartamento> departamentos)

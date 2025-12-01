@@ -33,6 +33,10 @@ namespace Domain.Entities
 
         #region Constructores
 
+        public clsDepartamento()
+        {
+        }
+
         public clsDepartamento(int id, string nombre)
         {
             _id = id;

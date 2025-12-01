@@ -89,9 +89,6 @@ namespace Domain.Entities
 
         public clsPersona()
         {
-            _id = 0;
-            _nombre = "";
-            _apellido = "";
         }
 
         #endregion
