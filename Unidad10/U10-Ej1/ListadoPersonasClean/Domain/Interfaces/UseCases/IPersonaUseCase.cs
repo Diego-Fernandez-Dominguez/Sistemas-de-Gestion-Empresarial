@@ -5,8 +5,8 @@ namespace Domain.Interfaces.UseCases
 {
     public interface IPersonaUseCase
     {
-        public List<clsPersona> getListaPersonas();
-        List<PersonaConNombreDeDepartamentoDTO> getListaPersonasConDepartamento();
+        public List<clsPersona> GetListaPersonas();
+        List<PersonaConNombreDeDepartamentoDTO> GetListaPersonasConDepartamento();
         PersonaConNombreDeDepartamentoDTO GetDetallePersona(int id);
         PersonaConListaDeDepartamentosDTO GetPersonaConListaDepartamentos(int id);
         PersonaConListaDeDepartamentosDTO GetPersonaParaCrear();

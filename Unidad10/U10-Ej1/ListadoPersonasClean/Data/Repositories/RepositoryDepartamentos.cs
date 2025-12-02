@@ -12,6 +12,14 @@ namespace Data.Repositories
 {
     public class RepositoryDepartamentos : IRepoDepartamento
     {
+        /// <summary>
+        /// <description>Actualiza los datos de un departamento existente en la base de datos.</description>
+        /// <precondition>El ID del departamento debe existir y el objeto departamento debe contener un nombre válido.</precondition>
+        /// <postcondition>Se actualiza el nombre del departamento en la base de datos.</postcondition>
+        /// </summary>
+        /// <param name="idDepartamento">ID del departamento a actualizar.</param>
+        /// <param name="departamento">Objeto con los nuevos datos del departamento.</param>
+        /// <returns>Número de filas afectadas en la base de datos.</returns>
         public int actualizarDepartamento(int idDepartamento, clsDepartamento departamento)
         {
             int filasAfectadas = 0;
@@ -39,6 +47,13 @@ namespace Data.Repositories
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// <description>Agrega un nuevo departamento a la base de datos.</description>
+        /// <precondition>El objeto departamento debe tener un nombre válido.</precondition>
+        /// <postcondition>Se inserta un nuevo registro en la tabla de departamentos.</postcondition>
+        /// </summary>
+        /// <param name="departamentoNuevo">Departamento a agregar.</param>
+        /// <returns>Número de filas afectadas en la base de datos (debería ser 1 si se insertó correctamente).</returns>
         public int añadirDepartamento(clsDepartamento departamentoNuevo)
         {
             int filasAfectadas = 0;
@@ -65,6 +80,13 @@ namespace Data.Repositories
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// <description>Elimina un departamento de la base de datos por su ID.</description>
+        /// <precondition>El ID del departamento debe existir y no tener restricciones que impidan la eliminación.</precondition>
+        /// <postcondition>Se elimina el registro del departamento de la base de datos.</postcondition>
+        /// </summary>
+        /// <param name="idDepartamento">ID del departamento a eliminar.</param>
+        /// <returns>Número de filas afectadas en la base de datos (debería ser 1 si se eliminó correctamente).</returns>
         public int eliminarDepartamento(int idDepartamento)
         {
             int filasAfectadas = 0;
@@ -91,6 +113,13 @@ namespace Data.Repositories
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// <description>Obtiene un departamento específico de la base de datos por su ID.</description>
+        /// <precondition>El ID del departamento debe ser válido (> 0).</precondition>
+        /// <postcondition>Devuelve el departamento correspondiente si existe; en caso contrario, devuelve null.</postcondition>
+        /// </summary>
+        /// <param name="idDepartamento">ID del departamento a consultar.</param>
+        /// <returns>Objeto clsDepartamento correspondiente al ID o null si no se encuentra.</returns>
         public clsDepartamento getDepartamentoPorID(int idDepartamento)
         {
             clsDepartamento oDepartamento = null;
@@ -123,6 +152,12 @@ namespace Data.Repositories
             return oDepartamento;
         }
 
+        /// <summary>
+        /// <description>Obtiene la lista completa de departamentos de la base de datos.</description>
+        /// <precondition>Ninguna</precondition>
+        /// <postcondition>Devuelve todos los departamentos existentes en la tabla Departamentos.</postcondition>
+        /// </summary>
+        /// <returns>Lista de departamentos.</returns>
         public List<clsDepartamento> getListaDepartamentos()
         {
             SqlConnection miConexion = new SqlConnection();
@@ -148,7 +183,6 @@ namespace Data.Repositories
                     while (miLector.Read())
                     {
                         oDepartamento = new clsDepartamento((int)miLector["ID"], (string)miLector["Nombre"]);
-
                         listadoDepartamentos.Add(oDepartamento);
                     }
                 }

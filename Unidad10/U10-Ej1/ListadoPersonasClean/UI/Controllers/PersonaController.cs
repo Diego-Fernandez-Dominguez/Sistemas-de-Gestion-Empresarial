@@ -7,159 +7,244 @@ namespace UI.Controllers
 {
     public class PersonaController : Controller
     {
-        private readonly IPersonaUseCase _useCase;
+        private readonly IPersonaUseCase _casoUsoPersona;
+        private readonly IDepartamentoUseCase _casoUsoDepartamento;
 
-        public PersonaController(IPersonaUseCase useCase)
+        public PersonaController(IPersonaUseCase useCasePersona, IDepartamentoUseCase useCaseDepartamento)
         {
-            _useCase = useCase;
+            _casoUsoPersona = useCasePersona;
+            _casoUsoDepartamento = useCaseDepartamento;
         }
 
-        // GET: PersonaController
+        /// <summary>
+        /// <description>Muestra la lista de personas con su departamento.</description>
+        /// <precondition>Ninguna</precondition>
+        /// <postcondition>Se devuelve la vista con la lista de personas y sus departamentos.</postcondition>
+        /// </summary>
+        /// <returns>Vista con la lista de personas.</returns>
         public ActionResult Index()
         {
-            return View(_useCase.getListaPersonasConDepartamento());
+            ActionResult salida;
+            try
+            {
+                var listado = _casoUsoPersona.GetListaPersonasConDepartamento();
+                salida = View(listado);
+            }
+            catch
+            {
+                salida = BadRequest("Error al obtener la lista de personas.");
+            }
+            return salida;
         }
 
-        // GET: PersonaController/Details/5
+        /// <summary>
+        /// <description>Muestra los detalles de una persona por su ID.</description>
+        /// <precondition>El ID de la persona debe existir.</precondition>
+        /// <postcondition>Se devuelve la vista con los detalles de la persona o NotFound si no existe.</postcondition>
+        /// </summary>
+        /// <param name="id">ID de la persona a mostrar.</param>
+        /// <returns>Vista con los detalles de la persona.</returns>
         public ActionResult Details(int id)
         {
-            var persona = _useCase.GetDetallePersona(id);
-            if (persona == null)
+            ActionResult salida;
+            try
             {
-                return NotFound();
+                var persona = _casoUsoPersona.GetDetallePersona(id);
+                salida = persona != null ? View(persona) : NotFound();
             }
-            return View(persona);
+            catch
+            {
+                salida = BadRequest("Error al obtener los detalles de la persona.");
+            }
+            return salida;
         }
 
-        // GET: PersonaController/Create
+        /// <summary>
+        /// <description>Obtiene los datos necesarios para crear una nueva persona.</description>
+        /// <precondition>Ninguna</precondition>
+        /// <postcondition>Se devuelve la vista para ingresar los datos de la nueva persona.</postcondition>
+        /// </summary>
+        /// <returns>Vista para crear una persona.</returns>
         public ActionResult Create()
         {
-            var personaConDepartamentos = _useCase.GetPersonaParaCrear();
-            return View(personaConDepartamentos);
+            ActionResult salida;
+            try
+            {
+                var listaDept = _casoUsoDepartamento.GetDepartamentos();
+                salida = View(listaDept);
+            }
+            catch
+            {
+                salida = BadRequest("Error al preparar la creación de la persona.");
+            }
+            return salida;
         }
 
-        // POST: PersonaController/Create
+        /// <summary>
+        /// <description>Procesa la creación de una nueva persona en la base de datos.</description>
+        /// <precondition>El modelo debe ser válido.</precondition>
+        /// <postcondition>Se crea la persona o se devuelve la vista con errores si ocurre algún problema.</postcondition>
+        /// </summary>
+        /// <param name="persona">Objeto con los datos de la persona a crear.</param>
+        /// <returns>Redirige al Index si la creación fue exitosa o vuelve a la vista con errores.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(clsPersona persona)
         {
-            // 1. Validar el modelo para capturar errores de Model Binding o Data Annotations
+            ActionResult salida;
+
             if (!ModelState.IsValid)
             {
-                var dto = _useCase.GetPersonaParaCrear();
-                dto.Persona = persona; // Preserva el input del usuario en el DTO
-                return View(dto);
+                var dto = _casoUsoPersona.GetPersonaParaCrear();
+                dto.Persona = persona;
+                salida = View(dto);
+            }
+            else
+            {
+                try
+                {
+                    int filasAfectadas = _casoUsoPersona.CrearPersona(persona);
+
+                    if (filasAfectadas > 0)
+                    {
+                        salida = RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        throw new Exception("No se pudo crear la persona en la base de datos.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    var dto = _casoUsoPersona.GetPersonaParaCrear();
+                    dto.Persona = persona;
+                    ModelState.AddModelError("", $"Error al crear la persona: {ex.Message}");
+                    salida = View(dto);
+                }
             }
 
-            try
-            {
-                // 2. Guardar la persona y verificar si la operación fue exitosa (debe devolver > 0)
-                int rowsAffected = _useCase.CrearPersona(persona);
-
-                if (rowsAffected > 0)
-                {
-                    // Éxito: Redirige a la lista
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    // Falló la inserción sin lanzar excepción (por ejemplo, lógica interna del Use Case)
-                    throw new Exception("La base de datos no pudo crear la persona.");
-                }
-            }
-            catch (Exception ex)
-            {
-                // 3. Error: Vuelve a la vista de creación y muestra el error
-                var dto = _useCase.GetPersonaParaCrear();
-                dto.Persona = persona; // Asegura que se muestren los datos que el usuario intentó guardar
-                ModelState.AddModelError("", $"Error al crear la persona: {ex.Message}");
-                return View(dto);
-            }
+            return salida;
         }
 
-        // GET: PersonaController/Edit/5
+        /// <summary>
+        /// <description>Obtiene la persona y la lista de departamentos para editar.</description>
+        /// <precondition>El ID de la persona debe existir.</precondition>
+        /// <postcondition>Se devuelve la vista con los datos de la persona para editar.</postcondition>
+        /// </summary>
+        /// <param name="id">ID de la persona a editar.</param>
+        /// <returns>Vista de edición de la persona.</returns>
         public ActionResult Edit(int id)
         {
-            var personaConDepartamentos = _useCase.GetPersonaConListaDepartamentos(id);
-            if (personaConDepartamentos == null || personaConDepartamentos.Persona == null)
+            ActionResult salida;
+            try
             {
-                return NotFound();
+                var dto = _casoUsoPersona.GetPersonaConListaDepartamentos(id);
+                salida = (dto != null && dto.Persona != null) ? View(dto) : NotFound();
             }
-            return View(personaConDepartamentos);
+            catch
+            {
+                salida = BadRequest("Error al obtener la persona para editar.");
+            }
+            return salida;
         }
 
-        // POST: PersonaController/Edit/5
+        /// <summary>
+        /// <description>Actualiza los datos de una persona existente en la base de datos.</description>
+        /// <precondition>El modelo debe ser válido y el ID de la ruta debe coincidir con el ID de la persona.</precondition>
+        /// <postcondition>Se actualizan los datos de la persona o se devuelve la vista con errores si ocurre algún problema.</postcondition>
+        /// </summary>
+        /// <param name="id">ID de la persona a actualizar.</param>
+        /// <param name="persona">Objeto con los datos actualizados.</param>
+        /// <returns>Redirige al Index si la actualización fue exitosa o vuelve a la vista con errores.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, clsPersona persona)
         {
+            ActionResult salida;
+
             if (id != persona.id)
             {
-                return NotFound();
+                salida = NotFound();
             }
-
-            // 1. Validar el modelo
-            if (!ModelState.IsValid)
+            else if (!ModelState.IsValid)
             {
-                var dto = _useCase.GetPersonaConListaDepartamentos(id);
-                dto.Persona = persona; // Preserva el input del usuario en el DTO
-                return View(dto);
+                var dto = _casoUsoPersona.GetPersonaConListaDepartamentos(id);
+                dto.Persona = persona;
+                salida = View(dto);
             }
-
-            try
+            else
             {
-                // 2. Actualizar la persona y verificar el resultado
-                int rowsAffected = _useCase.ActualizarPersona(id, persona);
-
-                if (rowsAffected > 0)
+                try
                 {
-                    // Éxito: Redirige a la lista
-                    return RedirectToAction(nameof(Index));
+                    int filasAfectadas = _casoUsoPersona.ActualizarPersona(id, persona);
+
+                    if (filasAfectadas > 0)
+                    {
+                        salida = RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        throw new Exception("No se pudo actualizar la persona. Verifique el ID.");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    // Falló la actualización sin lanzar excepción
-                    throw new Exception("La base de datos no pudo actualizar la persona. Revise el ID.");
+                    var dto = _casoUsoPersona.GetPersonaConListaDepartamentos(id);
+                    dto.Persona = persona;
+                    ModelState.AddModelError("", $"Error al editar la persona: {ex.Message}");
+                    salida = View(dto);
                 }
             }
-            catch (Exception ex)
-            {
-                // 3. Error: Vuelve a la vista de edición y muestra el error
-                var dto = _useCase.GetPersonaConListaDepartamentos(id);
-                dto.Persona = persona; // Asegura que se muestren los datos que el usuario intentó guardar
-                ModelState.AddModelError("", $"Error al editar la persona: {ex.Message}");
-                return View(dto);
-            }
+
+            return salida;
         }
 
-        // GET: PersonaController/Delete/5
+        /// <summary>
+        /// <description>Muestra la persona a eliminar.</description>
+        /// <precondition>El ID de la persona debe existir.</precondition>
+        /// <postcondition>Se devuelve la vista con los datos de la persona para confirmar la eliminación.</postcondition>
+        /// </summary>
+        /// <param name="id">ID de la persona a eliminar.</param>
+        /// <returns>Vista de confirmación de eliminación.</returns>
         public ActionResult Delete(int id)
         {
-            var persona = _useCase.GetDetallePersona(id);
-            if (persona == null)
+            ActionResult salida;
+            try
             {
-                return NotFound();
+                var persona = _casoUsoPersona.GetDetallePersona(id);
+                salida = persona != null ? View(persona) : NotFound();
             }
-            return View(persona);
+            catch
+            {
+                salida = BadRequest("Error al obtener la persona para eliminar.");
+            }
+            return salida;
         }
 
-        // POST: PersonaController/Delete/5
+        /// <summary>
+        /// <description>Elimina una persona de la base de datos por su ID.</description>
+        /// <precondition>El ID de la persona debe existir.</precondition>
+        /// <postcondition>La persona se elimina o se devuelve la vista con un mensaje de error.</postcondition>
+        /// </summary>
+        /// <param name="id">ID de la persona a eliminar.</param>
+        /// <param name="collection">Formulario enviado desde la vista (no se utiliza).</param>
+        /// <returns>Redirige al Index si la eliminación fue exitosa o vuelve a la vista con errores.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
+            ActionResult salida;
             try
             {
-                // Aquí podrías añadir también la verificación de rowsAffected si el Use Case devuelve int
-                _useCase.EliminarPersona(id);
-                return RedirectToAction(nameof(Index));
+                _casoUsoPersona.EliminarPersona(id);
+                salida = RedirectToAction(nameof(Index));
             }
             catch
             {
-                // Si la eliminación falla
                 ModelState.AddModelError("", "Error al eliminar la persona.");
-                return View(); // Considera redirigir a Index o Details para mostrar el error más claramente.
+                salida = View();
             }
+            return salida;
         }
     }
 }

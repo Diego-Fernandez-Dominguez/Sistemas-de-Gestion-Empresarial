@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Dferdom" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\diego\.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

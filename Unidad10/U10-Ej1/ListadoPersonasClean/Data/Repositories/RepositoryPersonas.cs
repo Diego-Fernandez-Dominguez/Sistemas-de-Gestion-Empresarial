@@ -12,88 +12,69 @@ namespace Data.Repositories
 {
     public class RepositoryPersonas : IRepoPersona
     {
+        /// <summary>
+        /// <description>Obtiene la lista completa de personas en la base de datos.</description>
+        /// <precondition>Ninguna</precondition>
+        /// <postcondition>Devuelve todas las personas registradas en la tabla Personas.</postcondition>
+        /// </summary>
+        /// <returns>Lista de personas.</returns>
         public List<clsPersona> getListaPersonas()
         {
             SqlConnection miConexion = new SqlConnection();
-
             List<clsPersona> listadoPersonas = new List<clsPersona>();
-
             SqlCommand miComando = new SqlCommand();
-
             SqlDataReader miLector;
-
             clsPersona oPersona;
 
             miConexion.ConnectionString
-            = ("server=dferdom.database.windows.net;database=PersonasDB;uid=prueba;pwd=123abc|@#;trustServerCertificate = true;");
+                = ("server=dferdom.database.windows.net;database=PersonasDB;uid=prueba;pwd=123abc|@#;trustServerCertificate = true;");
 
             try
             {
                 miConexion.Open();
-
                 miComando.CommandText = "SELECT * FROM personas";
-
                 miComando.Connection = miConexion;
-
                 miLector = miComando.ExecuteReader();
 
-
-                //Si hay lineas en el lector
-
                 if (miLector.HasRows)
-
                 {
-
                     while (miLector.Read())
-
                     {
-
                         oPersona = new clsPersona();
-
                         oPersona.id = (int)miLector["ID"];
-
                         oPersona.nombre = (string)miLector["Nombre"];
-
                         oPersona.apellido = (string)miLector["Apellidos"];
-
-
                         if (miLector["FechaNacimiento"] != System.DBNull.Value)
-
                         {
                             oPersona.fechaNac = (DateTime)miLector["FechaNacimiento"];
                         }
-
                         oPersona.direccion = (string)miLector["Direccion"];
-
                         oPersona.telefono = (string)miLector["Telefono"];
                         oPersona.imagen = (string)miLector["Foto"];
-
-                        oPersona.idDepartamento = (int)miLector["IDDepartamento"];            
-
+                        oPersona.idDepartamento = (int)miLector["IDDepartamento"];
                         listadoPersonas.Add(oPersona);
-
                     }
-
-
                 }
 
                 miLector.Close();
-
                 miConexion.Close();
-
             }
-
             catch (SqlException exSql)
             {
-
                 throw exSql;
-
             }
 
             return listadoPersonas;
-
         }
 
+        /// <summary>
+        /// <description>Actualiza los datos de una persona existente en la base de datos.</description>
+        /// <precondition>El ID de la persona debe existir y el objeto persona debe contener datos válidos.</precondition>
+        /// <postcondition>Se actualizan los campos de la persona en la base de datos.</postcondition>
+        /// </summary>
+        /// <param name="idPersona">ID de la persona a actualizar.</param>
+        /// <param name="persona">Objeto con los nuevos datos de la persona.</param>
+        /// <returns>Número de filas afectadas en la base de datos.</returns>
         public int actualizarPersona(int idPersona, clsPersona persona)
         {
             int filasAfectadas = 0;
@@ -131,6 +112,13 @@ namespace Data.Repositories
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// <description>Agrega una nueva persona a la base de datos.</description>
+        /// <precondition>El objeto persona debe contener datos válidos.</precondition>
+        /// <postcondition>Se inserta un nuevo registro en la tabla Personas.</postcondition>
+        /// </summary>
+        /// <param name="personaNueva">Persona a agregar.</param>
+        /// <returns>Número de filas afectadas en la base de datos (debería ser 1 si se insertó correctamente).</returns>
         public int añadirPersona(clsPersona personaNueva)
         {
             int filasAfectadas = 0;
@@ -167,6 +155,13 @@ namespace Data.Repositories
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// <description>Elimina una persona de la base de datos por su ID.</description>
+        /// <precondition>El ID de la persona debe existir.</precondition>
+        /// <postcondition>Se elimina el registro de la persona de la tabla Personas.</postcondition>
+        /// </summary>
+        /// <param name="idPersona">ID de la persona a eliminar.</param>
+        /// <returns>Número de filas afectadas en la base de datos.</returns>
         public int eliminarPersona(int idPersona)
         {
             int filasAfectadas = 0;
@@ -194,6 +189,13 @@ namespace Data.Repositories
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// <description>Obtiene una persona específica por su ID.</description>
+        /// <precondition>El ID de la persona debe ser válido (> 0).</precondition>
+        /// <postcondition>Devuelve la persona correspondiente si existe; en caso contrario, devuelve null.</postcondition>
+        /// </summary>
+        /// <param name="idPersona">ID de la persona a consultar.</param>
+        /// <returns>Objeto clsPersona correspondiente al ID o null si no se encuentra.</returns>
         public clsPersona getPersonaPorID(int idPersona)
         {
             clsPersona oPersona = null;
@@ -241,6 +243,13 @@ namespace Data.Repositories
             return oPersona;
         }
 
+        /// <summary>
+        /// <description>Cuenta cuántas personas están asignadas a un departamento específico.</description>
+        /// <precondition>El ID del departamento debe existir.</precondition>
+        /// <postcondition>Devuelve el número de personas asignadas al departamento indicado.</postcondition>
+        /// </summary>
+        /// <param name="idDepartamento">ID del departamento a consultar.</param>
+        /// <returns>Número de personas asignadas al departamento.</returns>
         public int contarPersonasDepartamentos(int idDepartamento)
         {
             int contador = 0;
