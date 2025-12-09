@@ -7,6 +7,7 @@ Domain/
 			+Getters/Setters()
 
 			+ clsDepartamento(int id, string nombre)
+			+ clsDepartamento()
 
 		clsPersona.cs
 			- int _id {get;}
@@ -21,6 +22,7 @@ Domain/
 			+Getters/Setters()
 
 			+ clsPersona(int id, string nombre, string apellido, DateTime fechaNac, string direccion, string telefono, string imagen, int departamentoId)
+			+ clsPersona()
 
 
 	Interfaces/
@@ -42,15 +44,28 @@ Domain/
 
 		UseCases/
 			IPersonaUseCase.cs
+				+ List<clsPersona> getListaPersona()
+				+ List<PersonaConNombreDepartamentoDTO> getPersonaConDepartamento()
+				+ PersonaConListaDepartamentosDTO getPersonaListaDepartamentos(int id)
+				+ PersonaConListaDepartamentosDTO getPersonaParaCrear()
+				+ int CrearPersona(clsPersona)
+				+ int ActualizarPersona(int id, clsPersona Persona)
+				+ int EliminarPersona(int id)
+
 			IDepartamentosUseCase.cs
+				+ List<clsDepartamento> getListaDepartamento()
+				+ clsDepartamento getDetalleDepartamento(int id)
+				+ clsDepartamento getDepartamentoParaEditar(int id)
+				+ List<clsPersona> getPersonaPorDepartamento
+				+ int CrearDepartamento(clsDepartamento)
+				+ int ActualizarDepartamento(int id, clsDepartamento Departamento)
+				+ int EliminarDepartamento(int id)
 
 	UseCases/
-		PersonaUseCase.cs
+		PersonaUseCase.cs : IPersonaUseCase
 			- IPersonaRepository _repositorioPersona
 			- IDepartamentoRepository _repositorioDepartamento
 			+ PersonaRepositoryUseCase(IRepositorioPersona repositorioPersona, IRepositorioDepartamento repositorioDepartamento)
-			{_repositorioPersona = repositorioPersona;
-				_repositorioDepartamento = repositorioDepartamento;} inyeccion
 
 			+ List<PersonaWithNombreDepartamentoDTO> getPersonasConNombreDepartamento()
 			+ PersonaWithDepartamentosDTO getPersonaConDepartamentos(int idPersona)
@@ -59,7 +74,7 @@ Domain/
 			+ boolean actualizarPersona(clsPersona persona)
 			+ boolean eliminarPersona(int id)
 
-		DepartamentosUseCase.cs
+		DepartamentosUseCase.cs : IDepartamentosUseCase
 			- IDepartamentoRepository _repositorioDepartamento
 			+ PersonaRepositoryUseCase(IRepositorioDepartamento repositorioDepartamento)
 			{_repositorioDepartamento = repositorioDepartamento;} inyeccion
@@ -108,31 +123,57 @@ Data/
 UI/
 	controllers/
 		PersonaController.cs inyeccion del IPersonasUseCase
-			+ IActionResult Editar(PersonaWithDepartamentosDTO personaConDepartamentos))
+
+			- IPersonaUseCase _useCasePersona
+			- IDepartamentoUseCase _useCaseDepartamento
+
+			+ PersonaController(IPersonaUseCase usecase)
+
+			+ IActionResult Editar(int id)
+
 			[HTTPost]
-			+ IActionResult Editar(int idPersona, clsPersona personaActualizada)
+			+ IActionResult Editar(int id, clsPersona personaActualizada)
+
 			+ IActionResult Mostrar()
+
 			+ IActionResult Eliminar(int idPersona)
+
 			[HTTPPost]
 			[ActionName =(Eliminar)]
 			+ IActionResult Eliminar(int idPersona)
-			+ IActionResult Crear() return List<clsDepartamento> listadoDepartamentos
+
+			+ IActionResult Crear()
+
 			[HTTPPost]
 			+ IActionResult Crear(clsPersona nuevaPersona)
+
 			+ IActionResult Detalles(int idPersona)
 
+
 		DepartamentoController.cs inyeccion del IDepartamentosUseCase
+
+			- IDepartamentoUseCase _useCase
+
+			+ DepartamentoController(IDepartamentoUseCase useCase)
+
 			+ IActionResult Editar(clsDepartamento departamento))
+
 			[HTTPost]
 			+ IActionResult Editar(int idDepartamento, clsDepartamento departamento)
+
 			+ IActionResult Mostrar()
+
 			+ IActionResult Eliminar(int idDepartamento)
+
 			[HTTPPost]
 			[ActionName =(Eliminar)]
 			+ IActionResult Eliminar(int idDepartamento)
+
 			+ IActionResult Crear()
+
 			[HTTPPost]
 			+ IActionResult Crear(clsDepartamento departamentoNuevo)
+
 			+ IActionResult Detalles(int idDepartamento)
 
 		models/
@@ -141,12 +182,14 @@ UI/
 			home/
 				Index.cshtml
 				Privacy.cshtml
+
 			departamento/
 				Crear.cshtml
 				Detalles.cshtml
 				Editar.cshtml
 				Eliminar.cshtml
 				Mostrar.cshtml
+
 			persona/
 				Crear.cshtml
 				Detalles.cshtml
@@ -154,4 +197,5 @@ UI/
 				Eliminar.cshtml
 				Mostrar.cshtml
 
-
+CompositionRoot/
+	DI.cs
