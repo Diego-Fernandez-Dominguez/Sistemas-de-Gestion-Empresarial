@@ -105,7 +105,7 @@ namespace UI.Controllers
             {
                 if (!ModelState.IsValid)
                 {
-                    resultado = View(departamento);
+                    resultado = View();
                 }
                 else
                 {
@@ -116,7 +116,7 @@ namespace UI.Controllers
             catch (Exception ex)
             {
                 ModelState.AddModelError("", $"Error al crear el departamento: {ex.Message}");
-                resultado = View(departamento);
+                resultado = View();
             }
             return resultado;
         }

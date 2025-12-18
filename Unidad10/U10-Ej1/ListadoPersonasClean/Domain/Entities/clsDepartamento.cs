@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,11 @@ namespace Domain.Entities
         #region Atributos privados
 
         private int _id;
+
+        [Display(Name = "Nombre")]
+        [MaxLength(10)]
+        [Required(ErrorMessage = "Campo nombre obligatorio")]
         private string _nombre;
-
-
 
         #endregion
 

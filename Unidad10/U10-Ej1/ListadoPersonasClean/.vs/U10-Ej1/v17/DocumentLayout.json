@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
+  "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\usecases\\personausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\personausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\views\\departamento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\views\\departamento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\usecases\\departamentousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\departamentousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\entities\\clsdepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\clsdepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\ui\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2009325-FCC0-4F44-AC88-4DE772547AE4}|UI\\UI.csproj|solutionrelative:ui\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,40 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonaUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\UseCases\\PersonaUseCase.cs",
-              "RelativeDocumentMoniker": "Domain\\UseCases\\PersonaUseCase.cs",
-              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\UseCases\\PersonaUseCase.cs",
-              "RelativeToolTip": "Domain\\UseCases\\PersonaUseCase.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T18:52:46.503Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Departamento\\Create.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Departamento\\Create.cshtml",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Views\\Departamento\\Create.cshtml",
+              "RelativeToolTip": "UI\\Views\\Departamento\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T13:26:37.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DepartamentoUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\UseCases\\DepartamentoUseCase.cs",
-              "RelativeDocumentMoniker": "Domain\\UseCases\\DepartamentoUseCase.cs",
-              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\UseCases\\DepartamentoUseCase.cs",
-              "RelativeToolTip": "Domain\\UseCases\\DepartamentoUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DepartamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\DepartamentoController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\DepartamentoController.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\DepartamentoController.cs",
+              "RelativeToolTip": "UI\\Controllers\\DepartamentoController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwGgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T18:52:45.749Z",
+              "WhenOpened": "2025-12-17T13:02:26.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PersonaController.cs",
-              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\PersonaController.cs",
-              "RelativeDocumentMoniker": "UI\\Controllers\\PersonaController.cs",
-              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\PersonaController.cs",
-              "RelativeToolTip": "UI\\Controllers\\PersonaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO8AAAA5AAAAAAAAAA==",
+              "Title": "clsDepartamento.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Entities\\clsDepartamento.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\clsDepartamento.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\Entities\\clsDepartamento.cs",
+              "RelativeToolTip": "Domain\\Entities\\clsDepartamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T15:34:56.764Z",
+              "WhenOpened": "2025-12-17T12:59:15.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "UI\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\UI\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "UI\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:40:17.516Z",
               "EditorCaption": ""
             }
           ]

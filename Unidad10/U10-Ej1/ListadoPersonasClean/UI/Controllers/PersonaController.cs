@@ -95,9 +95,8 @@ namespace UI.Controllers
 
             if (!ModelState.IsValid)
             {
-                var dto = _casoUsoPersona.GetPersonaParaCrear();
-                dto.Persona = persona;
-                salida = View(dto);
+                var listaDept = _casoUsoDepartamento.GetDepartamentos();
+                salida = View(listaDept);
             }
             else
             {
@@ -116,10 +115,9 @@ namespace UI.Controllers
                 }
                 catch (Exception ex)
                 {
-                    var dto = _casoUsoPersona.GetPersonaParaCrear();
-                    dto.Persona = persona;
+                    var listaDept = _casoUsoDepartamento.GetDepartamentos();
                     ModelState.AddModelError("", $"Error al crear la persona: {ex.Message}");
-                    salida = View(dto);
+                    salida = View(listaDept);
                 }
             }
 
