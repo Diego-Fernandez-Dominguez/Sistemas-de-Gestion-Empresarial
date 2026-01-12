@@ -15,5 +15,7 @@ namespace Domain.Interfaces.UseCases
         int ActualizarPersona(int id, clsPersona persona);
         int EliminarPersona(int id);
 
+        clsPersona GetPersonaById(int id);
+
     }
 }

@@ -48,9 +48,29 @@ namespace UI.Controllers.API
 
         // GET api/<PersonasController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            IActionResult salida;
+
+            try
+            {
+                clsPersona persona = _casoUso.GetPersonaById(id);
+
+                if (persona == null)
+                {
+                    salida = NotFound($"No se encontró la persona con ID {id}");
+                }
+                else
+                {
+                    salida = Ok(persona);
+                }
+            }
+            catch (Exception ex)
+            {
+                salida = BadRequest($"Error al obtener la persona: {ex.Message}");
+            }
+
+            return salida;
         }
 
         // POST api/<PersonasController>
@@ -154,7 +174,8 @@ namespace UI.Controllers.API
             }
             catch (Exception e)
             {
-                salida = BadRequest();
+                salida = BadRequest(e);
+                
             }
 
             return salida;

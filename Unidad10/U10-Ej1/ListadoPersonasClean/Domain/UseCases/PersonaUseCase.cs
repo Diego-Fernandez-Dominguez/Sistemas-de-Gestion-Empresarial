@@ -165,5 +165,10 @@ namespace Domain.UseCases
         {
             return _repoPersonas.eliminarPersona(id);
         }
+
+        public clsPersona GetPersonaById(int id)
+        {
+            return _repoPersonas.getPersonaPorID(id);
+        }
     }
 }
