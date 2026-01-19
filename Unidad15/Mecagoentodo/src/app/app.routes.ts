@@ -10,11 +10,4 @@ export const routes: Routes = [
   { path: 'tabla', component: TablaPersonas },
   { path: 'formulario', component: FormularioPersonas },
   { path: 'listado', component: ListaPersonas },
-  { path: '**', redirectTo: 'tabla' }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}

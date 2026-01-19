@@ -1,0 +1,29 @@
+<h2>Formulario Reactivo</h2>
+
+<form [formGroup]="formulario">
+
+    <label>Nombre</label><br>
+  <input type="text" formControlName="nombre">
+
+  @if (formulario.get('nombre')?.touched 
+      && formulario.get('nombre')?.errors?.['required']) {
+    <span>El nombre es obligatorio</span>
+  }
+
+
+{<span>El nombre es obligatorio</span>}
+  <div *ngIf="formulario.get('nombre')?.invalid && formulario.get('nombre')?.touched">
+    El nombre es obligatorio
+  </div>
+  <br><br>
+
+  <label>Apellidos</label><br>
+  <input type="text" formControlName="apellidos">
+  <div *ngIf="formulario.get('apellidos')?.invalid && formulario.get('apellidos')?.touched">
+    Los apellidos son obligatorios
+  </div>
+  <br><br>
+
+  <button type="button" (click)="saludar()">Saludar</button>
+
+</form>
