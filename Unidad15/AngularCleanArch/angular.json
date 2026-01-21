@@ -2,12 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm",
-    "analytics": "f01d775c-d5dc-44c5-ad86-cc9521eb01a3"
+    "packageManager": "npm"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "holaMundoAngular": {
+    "AngularCleanArch": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,9 +25,13 @@
               }
             ],
             "styles": [
-              "src/material-theme.scss",
               "src/styles.css"
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -58,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "holaMundoAngular:build:production"
+              "buildTarget": "AngularCleanArch:build:production"
             },
             "development": {
-              "buildTarget": "holaMundoAngular:build:development"
+              "buildTarget": "AngularCleanArch:build:development"
             }
           },
           "defaultConfiguration": "development"

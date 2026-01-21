@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FormularioPersona } from './formulario-persona';
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import { MatCardModule } from '@angular/material/card'; 
+import { MatInputModule } from '@angular/material/input';
+
 
 describe('FormularioPersona', () => {
   let component: FormularioPersona;
@@ -8,7 +11,7 @@ describe('FormularioPersona', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormularioPersona]
+      imports: [FormularioPersona, MatFormFieldModule, MatCardModule, MatInputModule]
     })
     .compileComponents();
 
