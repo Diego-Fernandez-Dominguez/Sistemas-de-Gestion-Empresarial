@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
+  "WorkspaceRootPath": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\data\\repositories\\repositorypersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\repositories\\repositorypersonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|c:\\users\\diego.fernandez\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\data\\repositories\\repositorydepartamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7EF9DBE-510F-4A13-BAA6-8C25C98CFD6C}|Data\\Data.csproj|solutionrelative:data\\repositories\\repositorydepartamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|c:\\users\\quick\\documents\\github\\sistemas-de-gestion-empresarial\\unidad10\\u10-ej1\\listadopersonasclean\\domain\\usecases\\personausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7EC689C-E8B2-49ED-ACAD-3031C96282AC}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\personausecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RepositoryDepartamentos.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryDepartamentos.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\RepositoryDepartamentos.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryDepartamentos.cs",
-              "RelativeToolTip": "Data\\Repositories\\RepositoryDepartamentos.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAUwKgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T12:07:03.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepositoryPersonas.cs",
-              "DocumentMoniker": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryPersonas.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\RepositoryPersonas.cs",
-              "ToolTip": "C:\\Users\\diego.fernandez\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Data\\Repositories\\RepositoryPersonas.cs",
-              "RelativeToolTip": "Data\\Repositories\\RepositoryPersonas.cs",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAUwAUBAAAAAAAAAAAAAA==",
+              "Title": "PersonaUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\UseCases\\PersonaUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\PersonaUseCase.cs",
+              "ToolTip": "C:\\Users\\quick\\Documents\\GitHub\\Sistemas-de-Gestion-Empresarial\\Unidad10\\U10-Ej1\\ListadoPersonasClean\\Domain\\UseCases\\PersonaUseCase.cs",
+              "RelativeToolTip": "Domain\\UseCases\\PersonaUseCase.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T11:42:39.558Z",
+              "WhenOpened": "2026-01-27T16:46:44.671Z",
               "EditorCaption": ""
             }
           ]

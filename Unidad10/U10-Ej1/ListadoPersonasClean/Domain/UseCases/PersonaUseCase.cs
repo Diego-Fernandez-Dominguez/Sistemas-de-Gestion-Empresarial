@@ -24,25 +24,8 @@ namespace Domain.UseCases
         /// <returns>Lista de personas con edad menor o igual a 18 años.</returns>
         public List<clsPersona> GetListaPersonas()
         {
-            int edad = 0;
-            List<clsPersona> personasFiltradas = new List<clsPersona>();
 
-            foreach (clsPersona persona in _repoPersonas.getListaPersonas())
-            {
-                edad = DateTime.Now.Year - persona.fechaNac.Year;
-
-                if (persona.fechaNac.Date > DateTime.Now.AddYears(-edad))
-                {
-                    edad--;
-                }
-
-                if (edad <= 18)
-                {
-                    personasFiltradas.Add(persona);
-                }
-            }
-
-            return personasFiltradas;
+            return _repoPersonas.getListaPersonas();
         }
 
         /// <summary>

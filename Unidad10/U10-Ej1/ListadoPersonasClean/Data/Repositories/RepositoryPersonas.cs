@@ -30,7 +30,7 @@ namespace Data.Repositories
             try
             {
                 miConexion.Open();
-                miComando.CommandText = "SELECT * FROM personas";
+                miComando.CommandText = "SELECT * FROM Personas";
                 miComando.Connection = miConexion;
                 miLector = miComando.ExecuteReader();
 
