@@ -20,14 +20,12 @@ namespace Data.Repositories
         /// <returns>Lista de personas.</returns>
         public List<clsPersona> getListaPersonas()
         {
-            SqlConnection miConexion = new SqlConnection();
             List<clsPersona> listadoPersonas = new List<clsPersona>();
             SqlCommand miComando = new SqlCommand();
             SqlDataReader miLector;
             clsPersona oPersona;
 
-            miConexion.ConnectionString
-                = ("server=dferdom.database.windows.net;database=PersonasDB;uid=prueba;pwd=123abc|@#;trustServerCertificate = true;");
+            SqlConnection miConexion = new SqlConnection(Connection.getConnectionString());
 
             try
             {

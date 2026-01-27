@@ -1,0 +1,25 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "Dferdom.resourceGroupLocation": {
+      "Name": "Dferdom.resourceGroupLocation",
+      "Type": null,
+      "Value": "spaincentral"
+    },
+    "Dferdom.resourceGroupName": {
+      "Name": "Dferdom.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "DDBB"
+    },
+    "Dferdom.subscriptionId": {
+      "Name": "Dferdom.subscriptionId",
+      "Type": "subscription",
+      "Value": "41a1aeea-810d-4008-8632-3628d2dd3a88"
+    },
+    "Dferdom.resourceName": {
+      "Name": "Dferdom.resourceName",
+      "Type": null,
+      "Value": "Dferdom"
+    }
+  }
+}
